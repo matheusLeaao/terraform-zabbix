@@ -1,0 +1,24 @@
+---
+
+  image: barcelos3/estags-project:1.0
+
+  stages:
+    - update-execute
+    
+    
+  terraform:
+    stage: update-execute
+    script:
+    - cd ~/
+    - yum install wget zip -y
+    - wget https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
+    - unzip terraform_0.12.20_linux_amd64.zip
+    - mv terraform terraform_12.20;mv terraform_12.20 /sbin
+    - terraform_12.20 --version
+    - terraform_12.20 init
+    - terraform_12.20 apply -auto-approve
+    - sleep 180
+    - terraform_12.20 destroy --force
+    
+    
+...
