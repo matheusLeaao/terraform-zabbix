@@ -8,7 +8,7 @@
 ##}
 
 provider "aws" {
-  region = "us-east-1"
+  region = "$region"
   access_key = "$access_key"
   secret_key = "$secret_access"
 }
