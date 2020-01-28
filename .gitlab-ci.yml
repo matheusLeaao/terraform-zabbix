@@ -9,11 +9,12 @@
   terraform:
     stage: update-execute
     script:
+    - pwd
     - cd ~/
     - yum install wget zip -y
     - wget https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
     - unzip terraform_0.12.20_linux_amd64.zip
-    - mv terraform terraform_12.20;mv terraform_12.20 /sbin
+    - mv terraform terraform_12.20;mv terraform_12.20 /sbin ;cd -
     - terraform_12.20 --version
     - terraform_12.20 init
     - terraform_12.20 apply -auto-approve
