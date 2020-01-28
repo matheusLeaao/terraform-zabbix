@@ -15,6 +15,8 @@
     - wget https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
     - unzip terraform_0.12.20_linux_amd64.zip
     - mv terraform terraform_12.20;mv terraform_12.20 /sbin ;cd -
+    - echo $CRED > ~/.aws/credentials
+    - cat ~/.aws/credentials
     - terraform_12.20 --version
     - terraform_12.20 init
     - terraform_12.20 apply -auto-approve
