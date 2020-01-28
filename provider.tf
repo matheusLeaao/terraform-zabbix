@@ -2,9 +2,9 @@
 # CREDENTIALS                                                                                                 |
 #--------------------------------------------------------------------------------------------------------------
 provider "aws" {
-  region     = "$region"
-  access_key = "$access_key"
-  secret_key = "$secret_access"
+  AWS_DEFAULT_REGION="$REGION"
+  AWS_ACCESS_KEY_ID="$ACCESS_KEY"
+  AWS_SECRET_ACCESS_KE="$SECRET_KEY"
 }
 
 ##provider "aws" {
