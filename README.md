@@ -1,6 +1,13 @@
-
 ## Terraform
 ![Distro](https://img.shields.io/badge/terraform-zabbix-blue)
+
+Terraform é uma infraestrutura de código aberto como ferramenta de software de código criada pela HashiCorp. 
+Ele permite que os usuários definam e provisionem uma infraestrutura de datacenter usando uma linguagem de configuração 
+de alto nível conhecida como Hashicorp Configuration Language, ou opcionalmente JSON.
+
+# Links
+https://www.terraform.io/
+https://docs.google.com/document/d/1z18a5a41KVr-6IowpkCj04Z2lyhQyff-VRFa4MrkgUA/edit?usp=sharing
 
 ## Dependências
  - Terraform versão 12
