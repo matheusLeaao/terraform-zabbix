@@ -7,6 +7,7 @@ de alto nível conhecida como Hashicorp Configuration Language, ou opcionalmente
 
 # Links
 https://www.terraform.io/
+
 https://docs.google.com/document/d/1z18a5a41KVr-6IowpkCj04Z2lyhQyff-VRFa4MrkgUA/edit?usp=sharing
 
 ## Dependências
