@@ -3,11 +3,11 @@
   image: barcelos3/estags-project:1.0
 
   stages:
-    - update-execute
+    - valida-codigo
     
     
   terraform:
-    stage: update-execute
+    stage: valida-codigo
     script:
     - pwd
     - cd ~/
@@ -17,6 +17,7 @@
     - mv terraform terraform_12.20;mv terraform_12.20 /sbin ;cd -
     - terraform_12.20 --version
     - terraform_12.20 validate
+    - terraform_12.20 fmt *.tf
     #- terraform_12.20 init
     #- terraform_12.20 apply -auto-approve
     #- sleep 180
